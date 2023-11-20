@@ -262,7 +262,7 @@ const setMap = () => {
     
   }
 
-  image.src = 'img/world_alpha_mini.jpg';
+  image.src = 'world_alpha_mini.jpg';
 
 }
 
