@@ -1,17 +1,38 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
-<head>
+
+  <head>
+
+    <title>Interactive Globe</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive 3D Globe</title>
-    <!-- Include necessary libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-</head>
-<body>
-    <!-- Container for the 3D globe -->
-    <div id="globe-container"></div>
+    <link rel="icon" href="img/favicon.png">
+    
+    <link rel="stylesheet" type="text/css" href="index.css">
 
-    <!-- Your script to create the 3D globe goes here -->
-    <script src="index.js"></script>
-</body>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.151.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.151.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <canvas class="canvas"></canvas>
+    </div>
+
+    <script src="index.js" type="module"></script> 
+
+  </body>
+
 </html>
